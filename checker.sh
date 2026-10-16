@@ -32,7 +32,7 @@ check() {
         PASS=$((PASS + 1))
     else
         printf "  ${RED}❌ %s${NC}\n" "$desc"
-        [ -n "$hint" ] && printf "     ${YELLOW}↳ %s${NC}\n" "$hint"
+        # [ -n "$hint" ] && printf "     ${YELLOW}↳ %s${NC}\n" "$hint"
         FAIL=$((FAIL + 1))
     fi
 }
